@@ -228,7 +228,79 @@ body {
 }
 .meet-team-container {
 }
+.meet-head {
+  margin-left: 20%;
+  margin-right: 20%;
+}
 .meet-head h2 {
+  font-weight: 700;
+  font-size: 60px;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.meet-head span {
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #827f7f;
 }
 .meet-category {
+  margin-top: 20px;
+  margin-left: 8%;
+  margin-bottom: 30px;
+}
+.meet-category button {
+  margin: -0.18%;
+  padding: 15px 40px;
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  color: #4f4d4d;
+  border-right: 1px solid gray;
+}
+.meet-all-cards {
+  margin-top: 30px;
+  margin-left: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.meet-card {
+  border: 1px solid gray;
+  box-shadow: 5px 5px 5px solid gray;
+}
+.meet-img {
+  padding: 20px;
+}
+.meet-img img {
+  width: 220px;
+  height: 200px;
+}
+.meet-content {
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+.meet-name {
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: #4f4d4d;
+}
+.meet-depratment {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #4f4d4d;
+}
+.fa-phone,
+.fa-envelope {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px;
 }
