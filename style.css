@@ -204,11 +204,11 @@ body {
   margin-bottom: 15px;
 }
 .cards-content {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
-.cards-content p {
+.cards-content span {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   margin-bottom: 15px;
   margin-left: 1%;
@@ -334,33 +334,33 @@ video {
   padding: 0%;
   box-sizing: content-box;
   background-color: #f5f8f9;
-}
-.wrap-details {
-  margin-top: 30px;
+  overflow: hidden;
 }
 
 .warp-main-head {
-  margin-left: 15%;
-  margin-right: 15%;
+  padding-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .warp-main-head h2 {
-  margin-top: 100px;
+  color: #405363;
   font-weight: 700;
   font-size: 60px;
   align-items: center;
   text-align: center;
 }
 .warp-main-head span {
+  color: #405363;
+  display: flex;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   align-items: center;
   text-align: center;
 }
 
 .wrap-all-cards {
-  width: 100%;
-  margin: 8%;
+  margin-left: 8%;
 }
 .wrap-card {
   display: flex;
