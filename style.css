@@ -10,7 +10,7 @@ body {
   padding: 0px;
   font-family: "Poppins", sans-serif;
 }
-
+/* navbar section 0 */
 .nav {
   margin: 0%;
   /* position: fixed; */
@@ -109,7 +109,7 @@ body {
   font-size: 18px;
   border: 1px solid black;
 }
-/* section 2 */
+/* section 2  creative options */
 
 .creative-option {
   margin: 0%;
@@ -226,6 +226,9 @@ body {
   border: none;
   border-radius: 5px;
 }
+
+/* Team meeet section */
+
 .meet-team-container {
   background-color: #ffffff;
 }
@@ -328,13 +331,16 @@ video {
   height: auto;
   border-radius: 8px 8px 0 0;
 }
-/* wrap section  */
+
+/*----- wrap section---------------  */
 .wrap-container {
   margin: 0px;
   padding: 0%;
   box-sizing: content-box;
   background-color: #f5f8f9;
   overflow: hidden;
+  position: relative;
+  z-index: -1;
 }
 
 .warp-main-head {
@@ -357,38 +363,59 @@ video {
   font-size: 18px;
   align-items: center;
   text-align: center;
+  margin-bottom: 50px;
+}
+/*----------- cards of ... */
+
+.wrap-cards-container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
 }
 
-.wrap-all-cards {
-  margin-left: 8%;
+.wrap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
+
 .wrap-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.card-details {
-  border: 1px solid #ccc;
-}
-.wrap-img {
-}
-.wrao-content p {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-weight: 400;
-  font-size: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   text-align: center;
 }
-.wrao-content span {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-weight: 400;
-  font-size: 18px;
-  text-align: center;
-  color: #857e7e;
-  margin-left: 30%;
+
+.wrap-card img {
+  width: 100%;
+  height: auto;
 }
+
+.wrap-card p {
+  margin: 15px 0;
+  padding: 0 15px;
+  font-size: 1em;
+}
+
+.wrap-card span {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+  color: #555;
+}
+@media (min-width: 768px) {
+  .wrap-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .wrap-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
 .fa-download {
   font-weight: 400;
   font-size: 18px;
@@ -396,66 +423,9 @@ video {
   color: #857e7e;
   margin-bottom: 20px;
 }
-.footer-link {
-  background-color: #20313e;
-  color: #ffff;
-}
-.footer-main {
-  display: flex;
-}
-.footer-column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 3%;
-}
+/* ----------contact us or get in touch from */
 
-.useful-head p {
-  margin-top: 20px;
-  margin-left: 8%;
-  font-weight: 500;
-  font-size: 22px;
-}
-.footer-column ul {
-  list-style: none;
-}
-
-.footer-column ul li a {
-  display: block;
-  text-decoration: none;
-  margin: 30px 18px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #ffff;
-  align-items: center;
-  cursor: pointer;
-}
-.footer-logo {
-  width: 100%;
-}
-.footer-logo img {
-  width: 150px;
-  height: auto;
-}
 .contact-container {
-  width: 100%;
-  border: 1px sold gray;
-  display: flex;
-}
-.contact-container {
-  width: 40%;
-  display: flex;
-  align-items: center;
-}
-.contact-info {
-  width: 30%;
-}
-.contact-form {
-}
-
-/* from */
-.container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -463,6 +433,9 @@ video {
   margin: 0 auto;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* position: absolute; */
+  z-index: 5;
+  background-color: #ffffff;
 }
 .left-side {
   width: 45%;
@@ -536,4 +509,51 @@ video {
 }
 .submit-row button:hover {
   background-color: #4cb4be;
+}
+
+/* footer  */
+.footer {
+  background-color: #20313e;
+}
+.footer-link {
+  background-color: #20313e;
+  color: #ffff;
+}
+.footer-main {
+  display: flex;
+}
+.footer-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3%;
+}
+
+.useful-head p {
+  margin-top: 20px;
+  margin-left: 8%;
+  font-weight: 500;
+  font-size: 22px;
+}
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li a {
+  display: block;
+  text-decoration: none;
+  margin: 30px 18px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffff;
+  align-items: center;
+  cursor: pointer;
+}
+.footer-logo {
+  width: 100%;
+}
+.footer-logo img {
+  width: 150px;
+  height: auto;
 }
